@@ -5,12 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+    <title>@yield('title', 'DC Comics' )</title>
     @vite('resources/js/app.js')
 </head>
 
 <body>
-
+    @include('partials/header')
+    <h1>
+        Ciao
+    </h1>
+    @include('partials/footer')
 </body>
 
 </html>
