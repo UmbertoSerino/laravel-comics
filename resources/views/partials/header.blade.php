@@ -5,13 +5,9 @@
         </div>
         <nav>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>3</li>
-                <li>4</li>
+                @for ($i = 0; $i < count($navBar); $i++) <li class="fs-5">{{ $navBar[$i] }}</li>
+                    @endfor
             </ul>
-
         </nav>
     </section>
 </header>

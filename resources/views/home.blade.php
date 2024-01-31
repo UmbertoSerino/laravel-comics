@@ -12,7 +12,7 @@
 <body>
     @include('partials/header')
     <h1>
-        Ciao
+
     </h1>
     @include('partials/footer')
 </body>

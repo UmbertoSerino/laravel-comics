@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $navBar = config('items-header.navbar');
+    return view('home', ['navBar' => $navBar]);
 });
+
+// Route::get('/card', function () {
+//     $herocards = config('db.herocards');
+//     return view('partials.card', ['products' => $herocards]);
+// });

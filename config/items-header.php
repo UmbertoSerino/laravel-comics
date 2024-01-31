@@ -1,6 +1,5 @@
 <?php
-
-$navBar = [
+return ['navbar' => [
     'Characters',
     'Comics',
     'Movies',
@@ -11,4 +10,4 @@ $navBar = [
     'Fans',
     'News',
     'Shop'
-];
+]];
