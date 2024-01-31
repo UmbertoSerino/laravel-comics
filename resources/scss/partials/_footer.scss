@@ -5,18 +5,16 @@ div.big-container-footer {
 }
 
 section.footer-top {
-    height: 370px;
     @include container(width, margin);
 
 
     color: $footer-text-color;
-    @include flex (row, space-between, center);
+    @include flex (row, center, center);
     overflow: hidden;
 
 
     div.container-list {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         height: 100%;
         width: 65%;

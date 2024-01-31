@@ -3,33 +3,33 @@
         <section class="footer-top">
             <div class="container-list">
                 <div>
-                    <ul>
+                    <ul class="me-5">
                         <h1>dc comics</h1>
-                        <li v-for=" itemsDCComics in dcComicsList">
-                        </li>
+                        @for ($i = 0; $i < count($dcComicsList); $i++) <li class="fs-5">{{ $dcComicsList[$i] }}</li>
+                            @endfor
                     </ul>
-                    <ul>
+                    <ul class="me-5">
                         <h1>
                             Shop
                         </h1>
-                        <li v-for="itemsShopList in shopList">
-                        </li>
+                        @for ($i = 0; $i < count($shopList); $i++) <li class="fs-5">{{ $shopList[$i] }}</li>
+                            @endfor
                     </ul>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="me-5">
                         <h1>
                             dc
                         </h1>
-                        <li v-for="itemsDCList in dcList">
-                        </li>
+                        @for ($i = 0; $i < count($dcList); $i++) <li class="fs-5">{{ $dcList[$i] }}</li>
+                            @endfor
                     </ul>
                 </div>
                 <div>
-                    <ul>
+                    <ul class="me-5">
                         <h1>Sites</h1>
-                        <li v-for="itemsSitesList in sitesList">
-                        </li>
+                        @for ($i = 0; $i < count($sitesList); $i++) <li class="fs-5">{{ $sitesList[$i] }}</li>
+                            @endfor
                     </ul>
 
                 </div>

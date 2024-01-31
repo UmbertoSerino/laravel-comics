@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $navBar = config('items-header.navbar');
-    return view('home', ['navBar' => $navBar]);
+    $dcComicsList = config('items-footer.dcComicsList');
+    $shopList = config('shopList-footer.shopList');
+    $dcList = config('dcList-footer.dcList');
+    $sitesList = config('sitesList-footer.sitesList');
+    $heroCards = config('herocards.heroCards');
+    return view('/layouts/home', compact('navBar', 'dcComicsList', 'shopList', 'dcList', 'sitesList', 'heroCards'));
 });
-
-// Route::get('/card', function () {
-//     $herocards = config('db.herocards');
-//     return view('partials.card', ['products' => $herocards]);
-// });
