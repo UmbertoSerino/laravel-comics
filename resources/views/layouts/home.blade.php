@@ -20,11 +20,16 @@
                 <p class="current">Current Series</p>
             </div>
         </section>
+        {{-- @include('partials.card') --}}
         @yield('main-content')
     </main>
     @include('partials.footer')
 
     @yield('script-content')
+
+    <?php 
+        var_dump($heroCards)
+    ?>
 
 </body>
 
