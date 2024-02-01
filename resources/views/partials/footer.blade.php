@@ -46,14 +46,12 @@
             </div>
             <div class="container-icon">
                 <p class="follow">Follow us</p>
-                <img src="../assets/img/footer-facebook.png" alt="pictures logo facebook">
-                <img src="../assets/img/footer-twitter.png" alt="picture logo twitter">
-                <img src="../assets/img/footer-youtube.png" alt="picture logo youtube">
-                <img src="../assets/img/footer-pinterest.png" alt="picture logo pinterest">
-                <img src="../assets/img/footer-periscope.png" alt="picture logo periscope">
+                <img src="{{ Vite::asset('resources/assets/img/footer-facebook.png') }}" alt="pictures logo facebook">
+                <img src="{{ Vite::asset('resources/assets/img/footer-twitter.png') }}" alt="picture logo twitter">
+                <img src="{{ Vite::asset('resources/assets/img/footer-youtube.png') }}" alt="picture logo youtube">
+                <img src="{{ Vite::asset('resources/assets/img/footer-pinterest.png') }}" alt="picture logo pinterest">
+                <img src="{{ Vite::asset('resources/assets/img/footer-periscope.png') }}" alt="picture logo periscope">
             </div>
         </div>
-
     </section>
-
 </footer>

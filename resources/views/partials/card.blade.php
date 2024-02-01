@@ -11,7 +11,7 @@
                 </h1>
                 <p>{{ $heroCard['price'] }}</p>
                 <p>{{ $heroCard['series'] }}</p>
-                <img src="{{ Vite::asset('resources/assets/img/logo.png') }}" alt="DC main logo">
+                <img src="{{ $heroCard['thumb'] }}" alt="DC main logo">
             </div>
             @endforeach
         </div>
